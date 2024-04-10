@@ -1,5 +1,5 @@
 def top_scorer(stats):
-  player = max(stats, key=lambda e:e[1])
-  highest_scorer = (player[0], player[1])
-  
-  return highest_scorer
+  highest_scorer = max(stats, key=lambda stat:stat[1])
+  player = (highest_scorer[0], highest_scorer[1])
+
+  return player
