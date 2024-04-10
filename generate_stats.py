@@ -5,7 +5,6 @@ def generate_stats(names, goals, goals_avoided, assists):
 
   names = names.split(',') 
   names = [name.capitalize() for name in names]
-  
 
   stats = tuple(zip(names, goals, goals_avoided, assists))
 
