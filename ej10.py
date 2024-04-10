@@ -14,13 +14,13 @@ stats = generate_stats(names, goals, goals_avoided, assists)
 print(stats)
 
 top_scorer = top_scorer(stats)
-print(top_scorer)
+print(f'El/la goleador/a de la temporada fue {top_scorer[0]} con {top_scorer[1]} goles.')
 
 most_influential = most_influential(stats)
-print(most_influential)
+print(f'El/la jugador/a más influyente fue {most_influential}.')
 
 goals_average = lambda: sum(goals) / 25
-print(goals_average())
+print(f'El promedio de goles por partido en la temporada fue de {goals_average()}.')
 
 average_topscorer = lambda: top_scorer[1] / 25
-print(average_topscorer())
+print(f'El promedio de goles por partido por parte de {top_scorer[0]} fue de {average_topscorer()}.')
