@@ -1,10 +1,8 @@
+def calculate_points(player):
+  return (player[0], player[1] * 1.5 + player[2] * 1.25 + player[3])
+
 def most_influential(stats):
-  max_points = 0
+  points = tuple(map(calculate_points, stats))
+  most_influential = max(points, key=lambda stat:stat[1])
 
-  for player in stats:
-    points = player[1] * 1.5 + player[2] * 1.25 + player[3]
-    if points > max_points:
-      max_points = points
-      most_influential = player[0]
-
-  return most_influential
+  return most_influential[0]
