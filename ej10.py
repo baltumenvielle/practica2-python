@@ -1,5 +1,6 @@
 from generate_stats import *
 from top_scorer import *
+from most_influential import *
 
 names = """ Agustin, Yanina, Andrés, Ariadna, Bautista, CAROLINA,
 CESAR, David, Diego, Dolores, DYLAN, ELIANA, Emanuel, Fabián, Noelia,
@@ -13,3 +14,6 @@ print(stats)
 
 top_scorer = top_scorer(stats)
 print(top_scorer)
+
+most_influential = most_influential(stats)
+print(most_influential)
