@@ -17,3 +17,6 @@ print(top_scorer)
 
 most_influential = most_influential(stats)
 print(most_influential)
+
+goals_average = lambda: 25 / sum(goals)
+print(goals_average())
