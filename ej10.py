@@ -19,8 +19,8 @@ print(f'El/la goleador/a de la temporada fue {top_scorer[0]} con {top_scorer[1]}
 most_influential = most_influential(stats)
 print(f'El/la jugador/a más influyente fue {most_influential}.')
 
-goals_average = lambda: sum(goals) / 25
-print(f'El promedio de goles por partido en la temporada fue de {goals_average()}.')
+total_goals_average = lambda: sum(goals) / 25
+print(f'El promedio de goles por partido en la temporada fue de {total_goals_average()}.')
 
-average_topscorer = lambda: top_scorer[1] / 25
-print(f'El promedio de goles por partido por parte de {top_scorer[0]} fue de {average_topscorer()}.')
+goals_average = lambda scorer: scorer[1] / 25
+print(f'El promedio de goles por partido por parte de {top_scorer[0]} fue de {goals_average(top_scorer)}.')
